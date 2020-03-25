@@ -1,3 +1,0 @@
-POST /login - Password protected route to login 
-POST /signup - Password protected route to sign up 
-GET /logout - logs the user out 
