@@ -14,8 +14,11 @@ router.post('/signup', async (req, res) => {
     const UsersObj = new User(
         {
             username,
-            password: Bcrypt.hashSync(request.body.password, 10);,
             emailid,
+            
+            // async(password) => {
+            //     password: Bcrypt.hashSync(request.body.password, 10),
+            // }
         },
     );
     try {
@@ -54,7 +57,7 @@ router.get('/logout',(req,res) => {
     req.session.destroy((err) => {
         if(err) {
             return console.log(err);
-        }
+        })
         res.render('loggedout');
     });
 

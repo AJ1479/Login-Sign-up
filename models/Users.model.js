@@ -6,16 +6,17 @@ const UsersSchema = new mongoose.Schema({
         required: true,
         unique: true,
     },
+    emailid: {
+        type: String,
+        required: true,
+        unique: true,
+
+    }
     password: {
         type: String,
         required: true,
     },
-    emailid: {
-        type: Number,
-        required: true,
-        unique: true,
-
-    },
+   ,
 
 });
 
