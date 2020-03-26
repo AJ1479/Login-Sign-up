@@ -17,8 +17,9 @@ app.set('view engine', 'html');
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
-app.use('/',mainRouter);
-
 app.use(session({secret: 'shhh',
   resave: false,
   saveUninitialized: true,}));
+  
+app.use('/',mainRouter);
+
