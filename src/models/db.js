@@ -7,4 +7,3 @@ mongoose.connect('mongodb://localhost:27017/mydb', (err) => {
         console.log('Mongo Connection Success');
     }
 });
-
