@@ -1,0 +1,3 @@
+POST /login - route to login and start an active session 
+POST /signup - route to register the user
+GET /logout - route to delete session and log the user out 
