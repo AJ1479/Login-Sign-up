@@ -2,7 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const path = require('path');
+const dotenv = require('dotenv');
 const mainRouter = require('./routes/main');
+
+
+dotenv.config();
 require('./models/db');
 
 const app = express();
@@ -19,7 +23,7 @@ app.set('view engine', 'html');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(session({
-    secret: 'shhh',
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
 }));
