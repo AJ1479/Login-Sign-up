@@ -1,7 +1,7 @@
 
 # Login-Sign-up
 
-A project demonstrating the Login and Sign-up flow
+A project demonstrating the Login and Sign-up flow - powered by EJS.
 
 
 ## Features
